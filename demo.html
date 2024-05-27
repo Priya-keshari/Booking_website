@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <style>
+        @media (min-width: 768px) {
+            .carousel-inner {
+                display: flex;
+            }
+
+            .carousel-item {
+                margin-right: 0;
+                flex: 0 0 25.333333%;
+                display: block;
+            }
+        }
+
+        .carousel-inner {
+            padding: 1em;
+        }
+
+        .card {
+            margin: 0 .5em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: #e1e1e1;
+            width: 6vh;
+            height: 6vh;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .card .img-wrapper {
+            max-width: 100%;
+            height: 13em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-height: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+   
+    <!-- <div class="container my-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="img/it1.jpeg" class="d-block w-100" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title 2</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the
+                                            card's content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div> -->
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/d1.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Almaty</h6>
+                                <p>Kazakhastan</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/d2.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Galle</h6>
+                                <p>Sri Lanka</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/d3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Tokyo</h6>
+                                <p>Japan</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/d4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Bangkok</h6>
+                                <p>Thailand</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/d5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Lansdowne</h6>
+                                <p>India</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/d6.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Agra</h6>
+                                <p>India</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/d7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Jaipur</h6>
+                                <p>India</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="img-wrapper">
+                            <img src="img/it4.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="container">
+                                <h6>Jaipur</h6>
+                                <p>India</p>
+                                <a href="#"><button class="btn btn-warning">Book Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        if (window.matchMedia("(min-width:576px)").matches) {
+            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+            var cardWidth = $(".carousel-item").width();
+
+            var scrollPosition = 0;
+
+            $(".carousel-control-next").on("click", function () {
+                if (scrollPosition < (carouselWidth - (cardWidth * 4))) { //check if you can go any further
+                    scrollPosition = scrollPosition + cardWidth;  //update scroll position
+                    $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
+                }
+            });
+            $(".carousel-control-prev").on("click", function () {
+                if (scrollPosition > 0) {
+                    scrollPosition = scrollPosition - cardWidth;  //update scroll position
+                    $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
+                }
+            });
+        }
+
+
+
+    </script>
+</body>
+
+
+</html>

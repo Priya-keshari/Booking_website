@@ -1,0 +1,602 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+}
+
+.navbar a {
+    font-size: 15px;
+    margin-left: 20px;
+    padding-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar .active {
+    border: 1px solid red;
+}
+
+.nav-item a {
+    margin-left: 40px;
+    color: black;
+}
+
+.nav-underline a {
+    font-size: 18px;
+    margin-left: 100px;
+}
+
+.nav {
+    padding-top: 20px;
+}
+
+.card_main p {
+    color: rgba(0, 100, 0, 0.818);
+}
+
+.card_main a {
+    text-decoration: none;
+}
+
+.card_main span {
+    color: blue;
+}
+
+.vl {
+    border-left: 1px solid gray;
+    height: 230px;
+    position: absolute;
+    left: 72%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.card_main svg {
+    font-size: 20px;
+}
+
+.card_main img {
+    cursor: pointer;
+}
+
+.card_footer h5 {
+    color: darkgreen;
+    padding-top: 10px;
+}
+
+.card_footer {
+    background-color: rgb(199, 221, 199);
+}
+
+.main .card {
+    cursor: pointer;
+}
+
+.main .card:hover {
+    border: 1px solid blue;
+}
+
+.img img {
+    width: 100%;
+    height: 500px;
+}
+
+.img {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.img .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.img h1 {
+    margin-left: 200px;
+}
+
+.nav-tabs button {
+    margin-left: 150px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.index_img img {
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+}
+
+.col-md-3 {
+    height: auto;
+    /* border: 1px solid gray; */
+    /* padding: 10px; */
+    /* margin: 1px; */
+}
+
+.weekend_img img {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.goa_img img {
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+}
+
+.goa_room img {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+.book_btn button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.st_link a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.flight {
+    background-color: rgb(244, 211, 149);
+    padding-top: 5px;
+    height: 50px;
+}
+
+footer {
+    background-color: black;
+}
+
+footer h5 {
+    color: orange;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+footer p{
+    color: white;
+    text-align: justify;
+}
+
+footer svg {
+    margin-left: 10px;
+}
+
+footer svg:hover {
+    color: orange;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 400px;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+}
+.card{
+    margin: 20px 10px 0px 0px;
+}
+.left img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right h4 {
+    margin: 5px;
+}
+.right a{
+    text-decoration: none;
+    color: black;
+}
+.right p {
+    margin: 0px 5px 5px 5px;
+}
+
+@media (max-width:800px) {
+    .card {
+        flex-direction: column;
+
+    }
+
+    .left img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .right {
+        align-items: center;
+    }
+
+
+}
+
+.about p{
+    text-align: justify;
+}
+.clt_img img{
+    height: 200px;
+}
+.clt_img h3{
+    margin-top: 20px;
+}
+.clt_img .card{
+    height: 380px;
+    transition: ease-in-out all 1s;
+}
+.clt_img .card:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.booking .card{
+    border: 5px solid yellow;
+    background-color: rgb(250, 250, 208);
+}
+.booking p{
+    text-align: justify;
+    /* margin-left: 30px; */
+    margin: 10px 30px 0px 30px;
+}
+.booking h5{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.booking h3{
+    margin-left: 10px;
+}
+.booking h2{
+    margin-left: 30px;
+}
+.booking label{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.carreer_img img{
+    height: 200px;
+    width: 100%;
+}
+.carreer_img .card{
+    height: 250px;
+    width: 100%;
+    border: 1px solid skyblue;
+    cursor: pointer;
+    border-radius: 10%;
+}
+.carreer_img h4{
+    margin-top: 40px;
+}
+.carreer_img p{
+    font-size: 18px;
+    text-align: justify;
+}
+.carreer_form .card{
+    box-shadow: 5px 5px 3px 0px rgb(232, 227, 227);
+}
+.place_card .card{
+    height: 330px;
+}
+.place_card button{
+    margin-top: 20px;
+}
+.place_card1 .card{
+    height: 300px;
+}
+label{
+    margin-top: 20px;
+    font-size: 15px;
+}
+.flight_form button{
+    height: 45px;
+    font-size: 20px;
+}
+.resort button{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+.train_img img{
+    width: 100%;
+    height: 300px;
+}
+.train_img h3{
+    margin: 10px 60px 0px 60px;
+    color: darkblue;
+}
+.train_img p{
+    font-size: 20px;
+    margin: 10px 60px 0px 60px;
+}
+.bus_btn button{
+    background-color: orange;
+    color: black;
+    width: 100%;
+    height: 40px;
+    margin-top: 70px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+}
+.train_booking button{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.train_booking label{
+    font-size: 18px;
+}
+.train_img .card{
+    cursor: pointer;
+}
+input:hover{
+    background-color: rgb(234, 231, 231);
+}
+.cab_booking button{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+.cab_booking label{
+    font-size: 18px;
+}
+.cab_booking input{
+    height: 45px;
+}
+.main{
+    position: relative;
+    width: 100vw;
+    display: grid;
+}
+.main > *{
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.img{
+    position: relative;
+    width: 100vw;
+}
+.img_head{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.img_head h1{
+    font-size: 60px;
+    color: white;
+}
+.img_head p{
+    font-size: 40px;
+    color: white;
+}
+.flight_cont a{
+    text-decoration: none;
+}
+.flight_cont a p{
+    margin-top: -15px;
+}
+.login .card{
+    margin-top: 140px;
+}
+.login a{
+    text-decoration: none;
+    color: black;
+}
+.flight_res h4{
+    color: blue;
+    font-weight: 200;
+}
+.flight_res label{
+    font-size: 18px;
+}
+.flight_res input{
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid rgb(202, 199, 199);
+}
+.flight_res select{
+    height: 45px;
+    margin-top: 10px;
+    border: 1px solid rgb(202, 199, 199);
+}
+.flight_res button{
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+}
+.SignUp button{
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    margin: 20px 0px 20px 0px;
+}
+.checkbox p{
+    margin: 5px;
+}
+.SignUp .card{
+    /* box-shadow: 7px 5px 5px 3px rgb(232, 227, 227); */
+    box-shadow: 10px 10px 5px 2px lightblue;
+}
+
+@media (max-width:800px){
+    .img_head h1{
+        font-size: 3rem;
+    }
+    .img_head p{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:760px){
+    #abcd{
+        margin-top: 20px;
+    }
+}
+
+
+
+@media (max-width:690px){
+    .img_head h1{
+        font-size: 2.5rem;
+    }
+    .img_head p{
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width:500px){
+    .img_head h1{
+        font-size: 2rem;
+    }
+    .img_head p{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:360px){
+    .img_head h1{
+        font-size: 1.6rem;
+    }
+    .img_head p{
+        font-size: 1.2rem;
+    }
+}
+
+.homestay p{
+    font-size: 25px;
+}
+.homestay button{
+    border-radius: 50px;
+    width: 40%;
+    height: 45px;
+    font-size: 20px;
+}
+.homestay .card{
+    box-shadow: 5px 5px 3px 3px rgb(241, 239, 239);
+    cursor: pointer;
+}
+.homestay .card:hover{
+    border: 1px solid skyblue;
+    /* rotate: 1deg; */
+}
+.homestay_partner img{
+    width: 100%;
+    height: 80px;
+}
+.homestay_partner .card{
+    cursor: pointer;
+    scale: 1.1;
+    box-shadow: 5px 5px 3px 3px rgb(241, 239, 239);
+}
+.homestay_partner .card:hover{
+    scale: 1;
+}
+.cab_parent .card{
+    background-color: black;
+}
+.cab_parent label{
+    color: white;
+}
+.cab_parent input{
+    height: 45px;
+}
+.cab_parent button{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .carousel-inner {
+        display: flex;
+    }
+
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 25.0000%;
+        display: block;
+    }
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.card {
+    margin: 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-height: 100%;
+}
+.flight_form label{
+    font-size: 20px;
+}
+.flight_form button{
+    width: 100%;
+    font-size: 18px;
+}
